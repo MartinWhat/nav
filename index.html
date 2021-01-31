@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>一个简单的导航站</title>
+    <link href="./assests/css/theme.css" rel="stylesheet" type="text/css">
+    <link href="assests/css/bootstrap.min.css" rel="stylesheet">
+    <script src="assests/js/jquery.min.js"></script>
+
+</head>
+<body class="bg-light">
+<div class="row">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+        <div class="container-fluid topshit">
+            <a class="navbar-brand" href="#">沃茨的小站</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a aria-current="page" class="nav-link active" href="#">主页</a>
+                    </li>
+                    <li class="nav-item">
+                        <div id="tp-weather-widget"></div>
+                    </li>
+                </ul>
+                <div class="d-flex"><a href="">登陆</a></div>
+            </div>
+        </div>
+    </nav>
+    <div class="top m-auto">
+        <section class="sousuo">
+            <div class="search">
+                <div class="search-box">
+                    <span class="search-icon" style="background: url(assests/images/search_icon.png) 0px 0px; opacity: 1;"></span>
+                    <input type="text" id="txt" class="search-input" autocomplete="off" placeholder="请输入关键字，按回车 / Enter 搜索">
+                    <button class="search-btn" id="search-btn"><i class="fa fa-search"></i></button>
+                </div>
+                <!-- 搜索热词 -->
+                <div class="box search-hot-text" id="box" style="display: none;">
+                    <ul></ul>
+                </div>
+                <!-- 搜索引擎 -->
+                <div class="search-engine" style="display: none;">
+                    <div class="search-engine-head">
+                        <strong class="search-engine-tit">选择您的默认搜索引擎：</strong>
+                        <div class="search-engine-tool">搜索热词： <span id="hot-btn"></span></div>
+                    </div>
+                    <ul class="search-engine-list search-engine-list_zmki_ul" style="list-style:none;">
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <script src="assests/js/index.min.js"></script>
+    </div>
+    <div class="giao"></div>
+    <div class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 sidebar">
+
+                        <nav class="sidebar-main">
+                            <ol>
+                                <li id="id-1" class="menu-item active">
+                                    <a href="javascript:void(0);">我的网站1</a>
+                                </li>
+                                <li id="id-2" class="menu-item">
+                                    <a href="javascript:void(0);">我的网站2</a>
+                                </li>
+                                <li id="id-3" class="menu-item">
+                                    <a href="javascript:void(0);">我的网站3</a>
+                                </li>
+                                <li id="id-4" class="menu-item">
+                                    <a href="javascript:void(0);">我的网站4</a>
+                                </li>
+                            </ol>
+                        </nav>
+
+                </div>
+                <div class="col-md-10">
+                    <div class="box yuanjiao id-1">
+                        <div class="box-title">我的网站<p class="right">更多></p></div>
+                        <div class="box-mian">
+                            <div class="row">
+                                <div class="col-xs-6 col-sm-4 col-md-2">
+                                    <div class="item">
+                                        <a href="#" rel="nofollow" title="nima">
+                                            <img alt="nima" src="1.jpg">
+                                            <h3>1个网站</h3>
+                                            <p>这是介绍</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-4 col-md-2">
+                                    <div class="item">
+                                        <a href="#" rel="nofollow" title="nima">
+                                            <img alt="nima" src="1.jpg">
+                                            <h3>1个网站</h3>
+                                            <p>这是介绍</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-4 col-md-2">
+                                    <div class="item">
+                                        <a href="#" rel="nofollow" title="nima">
+                                            <img alt="nima" src="1.jpg">
+                                            <h3>1个网站</h3>
+                                            <p>这是介绍</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-4 col-md-2">
+                                    <div class="item">
+                                        <a href="#" rel="nofollow" title="nima">
+                                            <img alt="nima" src="1.jpg">
+                                            <h3>1个网站</h3>
+                                            <p>这是介绍</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-4 col-md-2">
+                                    <div class="item">
+                                        <a href="#" rel="nofollow" title="nima">
+                                            <img alt="nima" src="1.jpg">
+                                            <h3>1个网站</h3>
+                                            <p>这是介绍</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-4 col-md-2">
+                                    <div class="item">
+                                        <a href="#" rel="nofollow" title="nima">
+                                            <img alt="nima" src="1.jpg">
+                                            <h3>1个网站</h3>
+                                            <p>这是介绍</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-4 col-md-2">
+                                    <div class="item">
+                                        <a href="#" rel="nofollow" title="nima">
+                                            <img alt="nima" src="1.jpg">
+                                            <h3>1个网站</h3>
+                                            <p>这是介绍</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box yuanjiao id-2">
+                        <div class="box-title">我的网站2<p class="right">更多</p></div>
+                        <div class="box-mian">
+                            <div class="row">
+                                <div class="col-xs-6 col-sm-4 col-md-2">
+                                    <div class="item">
+                                        <a href="#" rel="nofollow" title="nima">
+                                            <img alt="nima" src="1.jpg">
+                                            <h3>1个网站</h3>
+                                            <p>这是介绍</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box yuanjiao id-3">
+                        <div class="box-title">我的网站3<p class="right">更多</p></div>
+                        <div class="box-mian">
+                            <div class="row">
+                                <div class="col-xs-6 col-sm-4 col-md-2">
+                                    <div class="item">
+                                        <a href="#" rel="nofollow" title="nima">
+                                            <img alt="nima" src="1.jpg">
+                                            <h3>1个网站</h3>
+                                            <p>这是介绍</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box yuanjiao id-4">
+                        <div class="box-title">我的网站4<p class="right">更多</p></div>
+                        <div class="box-mian">
+                            <div class="row">
+                                <div class="col-xs-6 col-sm-4 col-md-2">
+                                    <div class="item">
+                                        <a href="#" rel="nofollow" title="nima">
+                                            <img alt="nima" src="1.jpg">
+                                            <h3>1个网站</h3>
+                                            <p>这是介绍</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+    <div class="giao"></div>
+    <div class="footer">
+        Copyright &copy; 2020 沃茨的小站
+    </div>
+</div>
+<script>
+    (function(a,h,g,f,e,d,c,b){b=function(){d=h.createElement(g);c=h.getElementsByTagName(g)[0];d.src=e;d.charset="utf-8";d.async=1;c.parentNode.insertBefore(d,c)};a["SeniverseWeatherWidgetObject"]=f;a[f]||(a[f]=function(){(a[f].q=a[f].q||[]).push(arguments)});a[f].l=+new Date();if(a.attachEvent){a.attachEvent("onload",b)}else{a.addEventListener("load",b,false)}}(window,document,"script","SeniverseWeatherWidget","//cdn.sencdn.com/widget2/static/js/bundle.js?t="+parseInt((new Date().getTime() / 100000000).toString(),10)));
+    window.SeniverseWeatherWidget('show', {
+        flavor: "slim",
+        location: "WX4FBXXFKE4F",
+        geolocation: true,
+        language: "auto",
+        unit: "c",
+        theme: "auto",
+        token: "0314b123-a47d-4860-b808-3f4e104bee5a",
+        hover: "enabled",
+        container: "tp-weather-widget"
+    })
+</script>
+<script src="assests/js/index.js"></script>
+<script src="assests/js/bootstrap.min.js"></script>
+</body>
+</html>
